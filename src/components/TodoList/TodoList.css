@@ -1,0 +1,89 @@
+* {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+::-webkit-scrollbar {
+  /*For Safari*/
+  width: 0;
+  background: transparent;
+}
+.container {
+  margin: auto;
+  margin-top: 10%;
+  background-color: #302f57;
+  padding: 40px;
+  width: 400px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 0;
+}
+.list-items {
+  min-height: 150px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.list-input {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.list-input input {
+  width: 100%;
+  height: 7vh;
+  border-radius: 40px;
+  border: 1px gray solid;
+  padding-left: 15px;
+  font-size: 20px;
+  outline: none;
+  background-color: #27264d;
+  border-color: #27264d;
+  color: white;
+}
+
+.list-input button {
+  position: absolute;
+  background-color: #3372ab;
+  border-radius: 40px;
+  border: 1px solid #3372ab;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  margin-right: 15px;
+  font-weight: lighter;
+  color: white;
+}
+
+.list-input button:hover {
+  background-color: rgb(242, 171, 40);
+}
+
+.list-input button:disabled {
+  border: 1px solid gray;
+
+  background-color: gray;
+}
+
+.element-list {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 300px;
+    padding: 20px;
+  }
+}
